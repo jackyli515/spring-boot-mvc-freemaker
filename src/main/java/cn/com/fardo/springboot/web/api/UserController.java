@@ -19,7 +19,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import cn.com.fardo.springboot.vo.User;
+import cn.com.fardo.springboot.domain.User;
 
 /**
  * @author lmq

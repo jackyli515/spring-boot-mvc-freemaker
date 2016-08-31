@@ -1,16 +1,44 @@
 /**
  * 
  */
-package cn.com.fardo.springboot.vo;
+package cn.com.fardo.springboot.domain;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
 
 /**
  * @author lmq
  *
  */
+@Entity
 public class User {
+	@Id
+	@GeneratedValue
 	private Long id;
+	@Column(nullable=false)
 	private String name;
+
+	@Column(nullable=false)
 	private Integer age;
+	
+	
+
+	/**
+	 * 
+	 */
+	public User() {
+	}
+
+	/**
+	 * @param name
+	 * @param age
+	 */
+	public User(String name, Integer age) {
+		this.name = name;
+		this.age = age;
+	}
 
 	/**
 	 * @return the id
