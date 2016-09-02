@@ -17,6 +17,6 @@ import cn.com.fardo.springboot.Application;
 @RunWith(SpringJUnit4ClassRunner.class)
 @SpringApplicationConfiguration(Application.class)
 @WebAppConfiguration
-public class BaseRepositoryTest {
+public abstract class BaseRepositoryTest {
 
 }

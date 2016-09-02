@@ -6,6 +6,7 @@ package cn.com.fardo.springboot.domain;
 
 
 import org.junit.Assert;
+import org.junit.Before;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -16,6 +17,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 public class UserRepositoryTest extends BaseRepositoryTest {
 	@Autowired
 	private UserRepository userRepository;
+	@Before
 	public void setUp(){
 		userRepository.deleteAll();
 	}
